@@ -1,12 +1,16 @@
 # FireFerret Kubernetes Example
 
-How much time on-cpu can you save using FireFerret alongside a Redis Sidecar? This example will help illustrate the power of FireFerret.
+How much time On-CPU can you save using FireFerret alongside a Redis Sidecar? How does this reflect in response times?
 
-## FireFerret
+This example will help illustrate the power of FireFerret.
+
+## Background
+
+**FireFerret**
 
 FireFerret for Node.js can be found [here](https://github.com/mster/fireferret).
 
-## Sidecar Pattern
+**Sidecar Pattern**
 
 Read more about Kubernetes patterns [here](https://kubernetes.io/blog/2015/06/the-distributed-system-toolkit-patterns/).
 

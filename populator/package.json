@@ -1,0 +1,18 @@
+{
+  "name": "populator",
+  "version": "6.6.6",
+  "description": "Populates MongoDB with sample documents.",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "echo \"Running Lint...\" && standard *.js */*.js --verbose && echo \"Lint Successful!\"",
+    "lint-fix": "echo \"Running standard --fix\" && standard *.js */*.js --verbose --fix && echo \"All fixed up!\""
+  },
+  "author": "@mster",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mockuments": "0.0.3",
+    "mongodb": "^3.6.2"
+  }
+}
