@@ -1,7 +1,7 @@
 {
-  "name": "api",
+  "name": "api-mongodb",
   "version": "0.0.0",
-  "description": "A Fastify API using FireFerret",
+  "description": "A Fastify API using the native MongoDB Driver",
   "main": "app.js",
   "scripts": {
     "test": "npm run lint",
@@ -16,8 +16,8 @@
     "fastify-autoload": "^3.1.0",
     "fastify-helmet": "^5.0.3",
     "fastify-plugin": "^2.3.4",
-    "fireferret": "^0.4.0",
-    "http-errors": "^1.8.0"
+    "http-errors": "^1.8.0",
+    "mongodb": "^3.6.2"
   },
   "devDependencies": {
     "standard": "^14.3.4"

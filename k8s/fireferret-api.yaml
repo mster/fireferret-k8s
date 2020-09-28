@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fireferret-api
+spec:
+  selector:
+    matchLabels:
+      app: fireferret-api
+  template:
+    metadata:
+      labels:
+        app: fireferret-api
+    spec:
+      containers:
+        - name: fireferret-api
+          image: msterpka/fireferret-api-example:0.1
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 80
+          env:
+            - name: MONGO_URI
+              value: "mongodb+srv://mongo_worker:ebivbe30AZCL9ZTb@dev.q0t7q.mongodb.net/dev?retryWrites=true&w=majority"
+            - name: MONGO_DB
+              value: "dev"
+            - name: MONGO_COLLETION
+              value: "collectionOne"
+            - name: REDIS_HOST
+              value: "172.18.0.2"
+            - name: REDIS_PORT
+              value: "6379"
+            - name: REDIS_AUTH_PASS
+              value: ""

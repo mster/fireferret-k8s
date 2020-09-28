@@ -1,14 +1,18 @@
+<div style="inline-block; vertical-align: middle;">
+    <img src="https://user-images.githubusercontent.com/15038724/94491772-b7cb9d80-019d-11eb-9d6f-1997b3f88b3d.png" height="150"/>
+    <img src="https://user-images.githubusercontent.com/15038724/94491862-e21d5b00-019d-11eb-8f6f-e36f48709d90.png" height="150"/>
+    <img height="150" alt="MongoDB_Leaf_FullColor_RGB" src="https://user-images.githubusercontent.com/15038724/94492332-f01fab80-019e-11eb-8fd5-2e9eda7b9844.png"/>
+</div>
+
 # FireFerret Kubernetes Example
-
-How much time On-CPU can you save using FireFerret alongside a Redis Sidecar? How does this reflect in response times?
-
-This example will help illustrate the power of FireFerret.
 
 ## Background
 
 **FireFerret**
 
-FireFerret for Node.js can be found [here](https://github.com/mster/fireferret).
+FireFerret is a client designed to mimic the usage of the tried-and-true [MongoDB driver](https://www.npmjs.com/package/mongodb), while providing caching functionality out of the box. FireFerret aims to reduce the quantity of expensive network requests by utilizing Redis instance(s), while simultaneously retaining content parity with MongoDB.
+
+FireFerret for Node can be found [here](https://github.com/mster/fireferret).
 
 **Sidecar Pattern**
 
@@ -20,18 +24,4 @@ We use [Autocannon](https://github.com/mcollina/autocannon) for local load testi
 
 **MongoDB Driver**
 
-| Active Connections | Req/Sec | Bytes/Sec |
-| ------------------ | ------- | --------- |
-| 1                  | X       | Y         |
-| 5                  | X       | Y         |
-| 10                 | X       | Y         |
-| 50                 | X       | Y         |
-
 **FireFerret Client**
-
-| Active Connections | Req/Sec | Bytes/Sec |
-| ------------------ | ------- | --------- |
-| 1                  | X       | Y         |
-| 5                  | X       | Y         |
-| 10                 | X       | Y         |
-| 50                 | X       | Y         |
