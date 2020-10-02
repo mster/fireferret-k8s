@@ -22,7 +22,7 @@ spec:
             - containerPort: 80
           env:
             - name: MONGO_URI
-              value: "mongodb+srv://mongo_worker:ebivbe30AZCL9ZTb@dev.q0t7q.mongodb.net/dev?retryWrites=true&w=majority"
+              value: ""
             - name: MONGO_DB
               value: "dev"
             - name: MONGO_COLLETION
